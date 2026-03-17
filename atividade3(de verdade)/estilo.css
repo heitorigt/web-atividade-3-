@@ -1,13 +1,43 @@
 body {
-    background-color: rgb(241, 137, 0);
+    background-color: rgb(218, 208, 197);
 }
 
-.flex {
+h1 {
+    color: rgb(67, 10, 10);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: rgb(235, 235, 6);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    color:rgb(216, 152, 217);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
     display: flex;
-    flex-flow: column wrap;
+    gap: 40px;
+    flex-flow: row;
     justify-content: center;
 }
 
 .item {
-    
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 3, 122);
+    text-align: center;
+    width: 200px
+}
+
+.Botão {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(241, 210, 210);
+    background-color: rgb(2, 61, 61);
 }
