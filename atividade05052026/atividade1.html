@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Este é o site do Heitor :3</h1>
+    <p>Insira nome e estado abaixo</p>
+    <input type="text" id="nome" placeholder="Insira seu nome">
+    <select id="estado">
+        <option >SP</option>
+        <option >RJ</option>
+    </select>
+    <input type="text" id="cor" placeholder="Insira uma cor em inglês">
+    <button onclick="mostrarsite()">Mostrar no site</button>
+    <button onclick="mostraralert()">Mostrar no alert</button>
+
+    <script>
+        function mostrarsite(){
+            let nome=document.getElementById("nome").value;
+            let estado=document.getElementById("estado").value;
+            let cor=document.getElementById("cor").value;
+            let p=document.createElement("p");
+            p.innerText="Nome: "+nome+" | Estado: "+estado;
+            p.style.color=cor;
+            document.body.appendChild(p);
+        }
+        function mostraralert(){
+            let nome=document.getElementById("nome").value;
+            let estado=document.getElementById("estado").value;
+            let cor=document.getElementById("cor").value;
+            alert("Nome: "+nome+" | Estado: "+estado);
+        }
+    </script>
+</body>
+</html>
